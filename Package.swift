@@ -8,7 +8,7 @@ let package = Package(
         .macOS(.v10_10),
         .iOS(.v8),
         .tvOS(.v9)
-    ]
+    ],
     products: [
         .library(name: "AppboyKit", targets: ["AppboyKit"]),
     ],
