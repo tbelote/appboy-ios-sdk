@@ -9,11 +9,11 @@ let package = Package(
         .iOS(.v8),
         .tvOS(.v9)
     ],
-    dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
-    ],
     products: [
         .library(name: "AppboyKit", targets: ["AppboyKit"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
     ],
     targets: [
         .systemLibrary(name: "AppboyKit", path: "AppboyKit"),
