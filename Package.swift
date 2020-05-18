@@ -9,4 +9,4 @@ let package = Package(
         .iOS(.v8),
         .tvOS(.v9)
     ]
-}
+)
