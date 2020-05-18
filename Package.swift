@@ -9,4 +9,10 @@ let package = Package(
         .iOS(.v8),
         .tvOS(.v9)
     ]
+    products: [
+        .library(name: "AppboyKit", targets: ["AppboyKit"]),
+    ],
+    targets: [
+        .systemLibrary(name: "AppboyKit", path: "AppboyKit"),
+    ]
 )
