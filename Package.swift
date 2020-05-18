@@ -13,6 +13,6 @@ let package = Package(
         .library(name: "AppboyKit", targets: ["AppboyKit"]),
     ],
     targets: [
-        .systemLibrary(name: "AppboyKit"),
+        .systemLibrary(name: "AppboyKit", path: "."),
     ]
 )
