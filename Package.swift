@@ -10,7 +10,8 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "AppboyKit", targets: ["AppboyKit", "AppboyKitSDK"]),
+        .library(name: "AppboyKit", targets: ["AppboyKit"]),
+        .executable(name: "AppboyKitSDK", targets: ["AppboyKitSDK"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
