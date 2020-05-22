@@ -11,22 +11,16 @@ let package = Package(
     ],
     products: [
         .library(name: "AppboyKit", targets: ["AppboyKit"]),
-    	.library(name: "AppboyKitSDK", targets: ["AppboyKitSDK"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.1.0")
     ],
     targets: [
-        .systemLibrary(name: "AppboyKit", path: "AppboyKit"),
-        .target(name: "AppboyKitSDK", path: "AppboyKit",
-		sources: ["."],
-		publicHeadersPath: "headers/AppboyKitLibrary",
-		linkerSettings: [
-			.linkedLibrary("z"),
-			.linkedFramework("SystemConfiguration", .when(platforms: [.iOS])),
-			.linkedFramework("QuartzCore", .when(platforms: [.iOS])),
-			.linkedFramework("CoreText", .when(platforms: [.iOS])),
-			.linkedFramework("WebKit", .when(platforms: [.iOS])),
-		]) // must have a main.swift for this to work.
+	 .binaryTarget(
+            name: "AppboyKit",
+            url: "https://github.com/Appboy/appboy-ios-sdk/releases/download/3.23.0/Appboy_iOS_SDK.framework.zip",
+            checksum: "99af66310857000d0acce73e3729136afcf88135e9ce6e0beee773a402c81e96"
+        )
+		]) 	
     ]
 )
