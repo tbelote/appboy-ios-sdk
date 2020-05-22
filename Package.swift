@@ -21,6 +21,5 @@ let package = Package(
             url: "https://github.com/Appboy/appboy-ios-sdk/releases/download/3.23.0/Appboy_iOS_SDK.framework.zip",
             checksum: "99af66310857000d0acce73e3729136afcf88135e9ce6e0beee773a402c81e96"
         )
-		]) 	
     ]
 )
