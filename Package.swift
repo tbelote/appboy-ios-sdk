@@ -19,7 +19,7 @@ let package = Package(
     targets: [
     	 .binaryTarget(
             name: "Appboy_iOS_SDK",
-            url: "https://www.dropbox.com/s/n8xqksl26igezf6/Appboy_iOS_SDK.framework.zip?dl=1",
+            url: "https://dl.dropboxusercontent.com/s/n8xqksl26igezf6/Appboy_iOS_SDK.framework.zip?dl=1",
             checksum: "da6ecb4b057940a357c71845cfe40e1f2f5e62b540973018df5a78e762a93c25"
             //Must be run from same folder as this file
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
