@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppboyKit",
+    name: "Appboy_iOS_SDK",
     platforms: [
         .macOS(.v10_10),
         .iOS(.v9),
@@ -11,7 +11,7 @@ let package = Package(
     ],
     products: [
         //.library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyKit", targets: ["Appboy_iOS_SDK"]),
+        .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
