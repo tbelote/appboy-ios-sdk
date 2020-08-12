@@ -10,25 +10,28 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
-        //.library(name: "AppboyKit", targets: ["AppboyKit"]),
+        //.library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
+        .library(name: "AppboyKit", targets: ["Appboy_iOS_SDK"]),
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
     ],
     targets: [
-//    	.binaryTarget(
-//            name: "AppboyKit",
-//            url: "https://github.com/Appboy/appboy-ios-sdk/releases/download/3.27.0-beta1/Appboy_iOS_SDK.framework.zip",
-//            checksum: ""
-//      ),
-      .binaryTarget(
+    	 .binaryTarget(
             name: "Appboy_iOS_SDK",
-            url: "https://github.com/Appboy/appboy-ios-sdk/releases/download/3.27.0-beta1/Appboy_iOS_SDK_core.framework.zip",
-            checksum: "a4d12d16684d423d008e3c86e05d8db044bc5d65d374ff0632ea2636fd9146d5"
+            url: "https://github.com/Appboy/appboy-ios-sdk/releases/download/3.27.0-beta1/Appboy_iOS_SDK.framework.zip",
+            checksum: "8087ed2e9efd76fb3bf55271ce7e83c6394888cba617d441a44c141d3c29f2eb"
             //Must be run from same folder as this file
-            //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK_core.framework.zip
-      )
+            //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
+
+       ),
+//      .binaryTarget(
+//            name: "Appboy_iOS_SDK",
+//            url: "https://github.com/Appboy/appboy-ios-sdk/releases/download/3.27.0-beta1/Appboy_iOS_SDK_core.framework.zip",
+//            checksum: "a4d12d16684d423d008e3c86e05d8db044bc5d65d374ff0632ea2636fd9146d5"
+//            //Must be run from same folder as this file
+//            //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK_core.framework.zip
+//      )
 
     ]
 )
