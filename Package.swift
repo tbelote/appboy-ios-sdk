@@ -11,7 +11,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", path: ["AppboyUI"])
+        .library(name: "AppboyUI", targets: ["AppboyUI"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
@@ -25,6 +25,6 @@ let package = Package(
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
 
        ),
-       .target(name: "AppboyUI", sources: ["AppboyUI"])
+       .target(name: "AppboyUI", path: ["AppboyUI"])
     ]
 )
