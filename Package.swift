@@ -12,7 +12,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", targets: ["AppboyUI"])
+        .library(name: "AppboyUI", targets: ["ABKUIUtils", "ABKContentCards", "ABKInAppMessage", "ABKNewsFeed"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
@@ -26,10 +26,21 @@ let package = Package(
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
 
        ),
-       .target(name: "AppboyUI",
-               path: "AppboyUI",
-               resources: [.copy("ABKContentCards/Resources"), .copy("ABKNewsFeed/Resources"),
-                           .copy("ABKInAppMessage/Resources") ]
-              )
+       .target(name: "ABKUIUtils",
+               path: "AppboyUI/ABKUIUtils"
+       ),
+       .target(name: "ABKContentCards",
+               path: "AppboyUI/ABKContentCards",
+               resources: [.copy("ABKContentCards/Resources")]
+        ),
+       .target(name: "ABKInAppMessage",
+               path: "AppboyUI/ABKInAppMessage",
+               resources: [.copy("ABKInAppMessage/Resources") ]
+        ),
+			 .target(name: "ABKNewsFeed",
+				       path: "AppboyUI/ABKNewsFeed",
+				       resources: [.copy("ABKNewsFeed/Resources") ]
+				)
+
     ]
 )
