@@ -11,7 +11,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", targets: ["AppboyUI"])
+        .library(name: "AppboyUI", path: ["AppboyUI"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
