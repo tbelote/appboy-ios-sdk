@@ -25,6 +25,6 @@ let package = Package(
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
 
        ),
-       .target(name: "AppboyUI", path: ["AppboyUI"])
+       .target(name: "AppboyUI", path: "AppboyUI")
     ]
 )
