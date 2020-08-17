@@ -31,15 +31,15 @@ let package = Package(
        ),
        .target(name: "ABKContentCards",
                path: "AppboyUI/ABKContentCards",
-               resources: [.copy("ABKContentCards/Resources")]
+               resources: [.copy("Resources")]
         ),
        .target(name: "ABKInAppMessage",
                path: "AppboyUI/ABKInAppMessage",
-               resources: [.copy("ABKInAppMessage/Resources") ]
+               resources: [.copy("Resources") ]
         ),
 			 .target(name: "ABKNewsFeed",
 				       path: "AppboyUI/ABKNewsFeed",
-				       resources: [.copy("ABKNewsFeed/Resources") ]
+				       resources: [.copy("Resources") ]
 				)
 
     ]
