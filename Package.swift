@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Appboy_iOS_SDK",
+    defaultLocalization: "en",
     platforms: [
         .macOS(.v10_10),
         .iOS(.v9),
@@ -25,6 +26,10 @@ let package = Package(
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
 
        ),
-       .target(name: "AppboyUI", path: "AppboyUI")
+       .target(name: "AppboyUI",
+               path: "AppboyUI",
+               resources: [.copy("ABKContentCards/Resources"), .copy("ABKNewsFeed/Resources"),
+                           .copy("ABKInAppMessage/Resources") ]
+              )
     ]
 )
