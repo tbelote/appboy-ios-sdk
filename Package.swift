@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Appboy_iOS_SDK",
+    name: "Appboy",
     defaultLocalization: "en",
     platforms: [
         .macOS(.v10_10),
@@ -11,7 +11,7 @@ let package = Package(
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
+        .library(name: "Appboy_XCFramework", targets: ["Appboy_iOS_SDK"]),
         .library(name: "AppboyUI", targets: ["ABKUIUtils", "ABKContentCards", "ABKInAppMessage", "ABKNewsFeed"])
     ],
     dependencies: [
