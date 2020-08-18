@@ -54,11 +54,11 @@ let package = Package(
 "ViewControllers/ABKInAppMessageModalViewController.m",
 "ViewControllers/ABKInAppMessageSlideupViewController.m",
 "ViewControllers/ABKInAppMessageFullViewController.m",
-"ViewControllers/ABKInAppMessageImmersiveViewController",
+"ViewControllers/ABKInAppMessageImmersiveViewController.m",
 "ViewControllers/ABKInAppMessageWindowController.m",
-"ViewControllers/ABKInAppMessageHTMLFullViewController.",
+"ViewControllers/ABKInAppMessageHTMLFullViewController.m",
 "ViewControllers/ABKInAppMessageHTMLViewController.m",
-"ViewControllers/ABKInAppMessageHTMLBaseViewController."
+"ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
 
                ],
                resources: [.copy("Resources") ]
