@@ -33,7 +33,6 @@ let package = Package(
        ),
        .target(name: "ABKContentCards",
                path: "AppboyUI/ABKContentCards",
-               resources: [.copy("Resources")],
                sources: ["ViewControllers/Cells/ABKClassicImageContentCardCell.m",
 "ViewControllers/Cells/ABKClassicContentCardCell.m",
 "ViewControllers/Cells/ABKBaseContentCardCell.m",
@@ -43,12 +42,11 @@ let package = Package(
 "ViewControllers/ABKContentCardsWebViewController.m",
 "ViewControllers/ABKContentCardsViewController.m"
 ],
-               publicHeadersPath:nil
-
+               publicHeadersPath:nil,
+               resources: [.copy("Resources")],
         ),
        .target(name: "ABKInAppMessage",
                path: "AppboyUI/ABKInAppMessage",
-               resources: [.copy("Resources") ],
                sources: [
 "ABKInAppMessageWindow.m",
 "ABKInAppMessageUIButton.m",
@@ -65,11 +63,11 @@ let package = Package(
 "ViewControllers/ABKInAppMessageHTMLBaseViewController."
 
                ],
-               publicHeadersPath:nil
+               publicHeadersPath:nil,
+               resources: [.copy("Resources") ],
         ),
 			 .target(name: "ABKNewsFeed",
 				       path: "AppboyUI/ABKNewsFeed",
-				       resources: [.copy("Resources") ],
 				       sources: [
 "ViewControllers/Cells/ABKNFClassicCardCell.m",
 "ViewControllers/Cells/ABKNFBaseCardCell.m",
@@ -79,7 +77,8 @@ let package = Package(
 "ViewControllers/ABKFeedWebViewController.m",
 "ViewControllers/ABKNewsFeedViewController.m"
 				       ],
-               publicHeadersPath:nil
+               publicHeadersPath:nil,
+				       resources: [.copy("Resources") ],
 				)
 
     ]
