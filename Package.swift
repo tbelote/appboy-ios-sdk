@@ -27,19 +27,59 @@ let package = Package(
 
        ),
        .target(name: "ABKUIUtils",
-               path: "AppboyUI/ABKUIUtils"
+               path: "AppboyUI/ABKUIUtils",
+               sources: ["ABKUIUtils.m", "ABKUIURLUtils.m"],
+               publicHeadersPath: nil
        ),
        .target(name: "ABKContentCards",
                path: "AppboyUI/ABKContentCards",
-               resources: [.copy("Resources")]
+               resources: [.copy("Resources")],
+               sources: ["ViewControllers/Cells/ABKClassicImageContentCardCell.m",
+"ViewControllers/Cells/ABKClassicContentCardCell.m",
+"ViewControllers/Cells/ABKBaseContentCardCell.m",
+"ViewControllers/Cells/ABKBannerContentCardCell.m",
+"ViewControllers/Cells/ABKCaptionedImageContentCardCell.m",
+"ViewControllers/ABKContentCardsTableViewController.m",
+"ViewControllers/ABKContentCardsWebViewController.m",
+"ViewControllers/ABKContentCardsViewController.m"
+],
+               publicHeadersPath:nil
+
         ),
        .target(name: "ABKInAppMessage",
                path: "AppboyUI/ABKInAppMessage",
-               resources: [.copy("Resources") ]
+               resources: [.copy("Resources") ],
+               sources: [
+"ABKInAppMessageWindow.m",
+"ABKInAppMessageUIButton.m",
+"ABKInAppMessageView.m",
+"ABKInAppMessageUIController.m",
+"ViewControllers/ABKInAppMessageViewController.m",
+"ViewControllers/ABKInAppMessageModalViewController.m",
+"ViewControllers/ABKInAppMessageSlideupViewController.m",
+"ViewControllers/ABKInAppMessageFullViewController.m",
+"ViewControllers/ABKInAppMessageImmersiveViewController",
+"ViewControllers/ABKInAppMessageWindowController.m",
+"ViewControllers/ABKInAppMessageHTMLFullViewController.",
+"ViewControllers/ABKInAppMessageHTMLViewController.m",
+"ViewControllers/ABKInAppMessageHTMLBaseViewController."
+
+               ],
+               publicHeadersPath:nil
         ),
 			 .target(name: "ABKNewsFeed",
 				       path: "AppboyUI/ABKNewsFeed",
-				       resources: [.copy("Resources") ]
+				       resources: [.copy("Resources") ],
+				       sources: [
+"ViewControllers/Cells/ABKNFClassicCardCell.m",
+"ViewControllers/Cells/ABKNFBaseCardCell.m",
+"ViewControllers/Cells/ABKNFBannerCardCell.m",
+"ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
+"ViewControllers/ABKNewsFeedTableViewController.m",
+"ViewControllers/ABKFeedWebViewController.m",
+"ViewControllers/ABKNewsFeedViewController.m"
+				       ],
+               publicHeadersPath:nil
 				)
 
     ]
