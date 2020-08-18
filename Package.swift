@@ -12,7 +12,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_XCFramework", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", targets: ["ABKUIUtils", "ABKContentCards", "ABKInAppMessage", "ABKNewsFeed"])
+        //.library(name: "AppboyUI", targets: ["AppboyUI"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
@@ -26,56 +26,45 @@ let package = Package(
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
 
        ),
-       .target(name: "ABKUIUtils",
-               path: "AppboyUI/ABKUIUtils",
-               sources: ["ABKUIUtils.m", "ABKUIURLUtils.m"]
-       ),
-       .target(name: "ABKContentCards",
-               path: "AppboyUI/ABKContentCards",
-               sources: ["ViewControllers/Cells/ABKClassicImageContentCardCell.m",
-"ViewControllers/Cells/ABKClassicContentCardCell.m",
-"ViewControllers/Cells/ABKBaseContentCardCell.m",
-"ViewControllers/Cells/ABKBannerContentCardCell.m",
-"ViewControllers/Cells/ABKCaptionedImageContentCardCell.m",
-"ViewControllers/ABKContentCardsTableViewController.m",
-"ViewControllers/ABKContentCardsWebViewController.m",
-"ViewControllers/ABKContentCardsViewController.m"
-],
-               resources: [.copy("Resources")]
-        ),
-       .target(name: "ABKInAppMessage",
-               path: "AppboyUI/ABKInAppMessage",
-               sources: [
-"ABKInAppMessageWindow.m",
-"ABKInAppMessageUIButton.m",
-"ABKInAppMessageView.m",
-"ABKInAppMessageUIController.m",
-"ViewControllers/ABKInAppMessageViewController.m",
-"ViewControllers/ABKInAppMessageModalViewController.m",
-"ViewControllers/ABKInAppMessageSlideupViewController.m",
-"ViewControllers/ABKInAppMessageFullViewController.m",
-"ViewControllers/ABKInAppMessageImmersiveViewController.m",
-"ViewControllers/ABKInAppMessageWindowController.m",
-"ViewControllers/ABKInAppMessageHTMLFullViewController.m",
-"ViewControllers/ABKInAppMessageHTMLViewController.m",
-"ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
-
-               ],
-               resources: [.copy("Resources") ]
-        ),
-			 .target(name: "ABKNewsFeed",
-				       path: "AppboyUI/ABKNewsFeed",
-				       sources: [
-"ViewControllers/Cells/ABKNFClassicCardCell.m",
-"ViewControllers/Cells/ABKNFBaseCardCell.m",
-"ViewControllers/Cells/ABKNFBannerCardCell.m",
-"ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
-"ViewControllers/ABKNewsFeedTableViewController.m",
-"ViewControllers/ABKFeedWebViewController.m",
-"ViewControllers/ABKNewsFeedViewController.m"
-				       ],
-				       resources: [.copy("Resources") ]
-				)
+ //      .target(name: "AppboyUI",
+//               path: "AppboyUI",
+//               sources: [
+//"ABKNewsFeed/ViewControllers/Cells/ABKNFClassicCardCell.m",
+//"ABKNewsFeed/ViewControllers/Cells/ABKNFBaseCardCell.m",
+//"ABKNewsFeed/ViewControllers/Cells/ABKNFBannerCardCell.m",
+//"ABKNewsFeed/ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
+//"ABKNewsFeed/ViewControllers/ABKNewsFeedTableViewController.m",
+//"ABKNewsFeed/ViewControllers/ABKFeedWebViewController.m",
+//"ABKNewsFeed/ViewControllers/ABKNewsFeedViewController.m",
+//"ABKInAppMessage/ABKInAppMessageWindow.m",
+//"ABKInAppMessage/ABKInAppMessageUIButton.m",
+//"ABKInAppMessage/ABKInAppMessageView.m",
+//"ABKInAppMessage/ABKInAppMessageUIController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageModalViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageSlideupViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageFullViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageImmersiveViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageWindowController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLFullViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLViewController.m",
+//"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLBaseViewController.m",
+//"ABKUIUtils/ABKUIUtils.m",
+//"ABKUIUtils/ABKUIURLUtils.m",
+//"ABKContentCards/ViewControllers/Cells/ABKClassicImageContentCardCell.m",
+//"ABKContentCards/ViewControllers/Cells/ABKClassicContentCardCell.m",
+//"ABKContentCards/ViewControllers/Cells/ABKBaseContentCardCell.m",
+//"ABKContentCards/ViewControllers/Cells/ABKBannerContentCardCell.m",
+//"ABKContentCards/ViewControllers/Cells/ABKCaptionedImageContentCardCell.m",
+//"ABKContentCards/ViewControllers/ABKContentCardsTableViewController.m",
+//"ABKContentCards/ViewControllers/ABKContentCardsWebViewController.m",
+//"ABKContentCards/ViewControllers/ABKContentCardsViewController.m"
+//],
+//resources: [.copy("ABKContentCards/Resources"), 
+//            .copy("ABKInAppMessage/Resources"),
+//            .copy("ABKNewsFeed/Resources"),            
+//            ]
+//       )
 
     ]
 )
