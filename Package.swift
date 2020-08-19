@@ -27,37 +27,37 @@ let package = Package(
 
        ),
       .target(name: "AppboyUIUtils",
-              path: "AppboyUI",
+              path: "AppboyUI/ABKUIUtils",
               sources: [
-"ABKUIUtils/ABKUIUtils.m",
-"ABKUIUtils/ABKUIURLUtils.m"
+"ABKUIUtils.m",
+"ABKUIURLUtils.m"
 ]
       ),
             .target(name: "AppboyContentCards",
-              path: "AppboyUI",
+              path: "AppboyUI/ABKContentCards",
               sources: [
-"ABKContentCards/ViewControllers/Cells/ABKClassicImageContentCardCell.m",
-"ABKContentCards/ViewControllers/Cells/ABKClassicContentCardCell.m",
-"ABKContentCards/ViewControllers/Cells/ABKBaseContentCardCell.m",
-"ABKContentCards/ViewControllers/Cells/ABKBannerContentCardCell.m",
-"ABKContentCards/ViewControllers/Cells/ABKCaptionedImageContentCardCell.m",
-"ABKContentCards/ViewControllers/ABKContentCardsTableViewController.m",
-"ABKContentCards/ViewControllers/ABKContentCardsWebViewController.m",
-"ABKContentCards/ViewControllers/ABKContentCardsViewController.m"
+"ViewControllers/Cells/ABKClassicImageContentCardCell.m",
+"ViewControllers/Cells/ABKClassicContentCardCell.m",
+"ViewControllers/Cells/ABKBaseContentCardCell.m",
+"ViewControllers/Cells/ABKBannerContentCardCell.m",
+"ViewControllers/Cells/ABKCaptionedImageContentCardCell.m",
+"ViewControllers/ABKContentCardsTableViewController.m",
+"ViewControllers/ABKContentCardsWebViewController.m",
+"ViewControllers/ABKContentCardsViewController.m"
 ],
 resources: [.process("ABKContentCards/Resources")       
            ]
       ),
             .target(name: "AppboyNewsFeed",
-              path: "AppboyUI",
+              path: "AppboyUI/ABKNewsFeed",
               sources: [
-"ABKNewsFeed/ViewControllers/Cells/ABKNFClassicCardCell.m",
-"ABKNewsFeed/ViewControllers/Cells/ABKNFBaseCardCell.m",
-"ABKNewsFeed/ViewControllers/Cells/ABKNFBannerCardCell.m",
-"ABKNewsFeed/ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
-"ABKNewsFeed/ViewControllers/ABKNewsFeedTableViewController.m",
-"ABKNewsFeed/ViewControllers/ABKFeedWebViewController.m",
-"ABKNewsFeed/ViewControllers/ABKNewsFeedViewController.m"
+"ViewControllers/Cells/ABKNFClassicCardCell.m",
+"ViewControllers/Cells/ABKNFBaseCardCell.m",
+"ViewControllers/Cells/ABKNFBannerCardCell.m",
+"ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
+"ViewControllers/ABKNewsFeedTableViewController.m",
+"ViewControllers/ABKFeedWebViewController.m",
+"ViewControllers/ABKNewsFeedViewController.m"
 ],
 resources: [
            .process("ABKNewsFeed/Resources")
@@ -65,21 +65,21 @@ resources: [
       ),
       
             .target(name: "AppboyInAppMessage",
-              path: "AppboyUI",
+              path: "AppboyUI/ABKInAppMessage",
               sources: [
-"ABKInAppMessage/ABKInAppMessageWindow.m",
-"ABKInAppMessage/ABKInAppMessageUIButton.m",
-"ABKInAppMessage/ABKInAppMessageView.m",
-"ABKInAppMessage/ABKInAppMessageUIController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageModalViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageSlideupViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageFullViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageImmersiveViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageWindowController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLFullViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
+"ABKInAppMessageWindow.m",
+"ABKInAppMessageUIButton.m",
+"ABKInAppMessageView.m",
+"ABKInAppMessageUIController.m",
+"ViewControllers/ABKInAppMessageViewController.m",
+"ViewControllers/ABKInAppMessageModalViewController.m",
+"ViewControllers/ABKInAppMessageSlideupViewController.m",
+"ViewControllers/ABKInAppMessageFullViewController.m",
+"ViewControllers/ABKInAppMessageImmersiveViewController.m",
+"ViewControllers/ABKInAppMessageWindowController.m",
+"ViewControllers/ABKInAppMessageHTMLFullViewController.m",
+"ViewControllers/ABKInAppMessageHTMLViewController.m",
+"ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
 ],
 resources: [
            .process("ABKInAppMessage/Resources")
