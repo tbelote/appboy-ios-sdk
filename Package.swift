@@ -12,7 +12,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_XCFramework", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", targets: ["AppboyUI"])
+        .library(name: "AppboyUI", targets: ["AppboyUIUtils", "AppboyContentCards", "AppboyNewsFeed", "AppboyInAppMessage"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
@@ -26,31 +26,16 @@ let package = Package(
             //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
 
        ),
-      .target(name: "AppboyUI",
+      .target(name: "AppboyUIUtils",
               path: "AppboyUI",
               sources: [
-"ABKNewsFeed/ViewControllers/Cells/ABKNFClassicCardCell.m",
-"ABKNewsFeed/ViewControllers/Cells/ABKNFBaseCardCell.m",
-"ABKNewsFeed/ViewControllers/Cells/ABKNFBannerCardCell.m",
-"ABKNewsFeed/ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
-"ABKNewsFeed/ViewControllers/ABKNewsFeedTableViewController.m",
-"ABKNewsFeed/ViewControllers/ABKFeedWebViewController.m",
-"ABKNewsFeed/ViewControllers/ABKNewsFeedViewController.m",
-"ABKInAppMessage/ABKInAppMessageWindow.m",
-"ABKInAppMessage/ABKInAppMessageUIButton.m",
-"ABKInAppMessage/ABKInAppMessageView.m",
-"ABKInAppMessage/ABKInAppMessageUIController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageModalViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageSlideupViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageFullViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageImmersiveViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageWindowController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLFullViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLViewController.m",
-"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLBaseViewController.m",
 "ABKUIUtils/ABKUIUtils.m",
-"ABKUIUtils/ABKUIURLUtils.m",
+"ABKUIUtils/ABKUIURLUtils.m"
+]
+      ),
+            .target(name: "AppboyContentCards",
+              path: "AppboyUI",
+              sources: [
 "ABKContentCards/ViewControllers/Cells/ABKClassicImageContentCardCell.m",
 "ABKContentCards/ViewControllers/Cells/ABKClassicContentCardCell.m",
 "ABKContentCards/ViewControllers/Cells/ABKBaseContentCardCell.m",
@@ -60,11 +45,26 @@ let package = Package(
 "ABKContentCards/ViewControllers/ABKContentCardsWebViewController.m",
 "ABKContentCards/ViewControllers/ABKContentCardsViewController.m"
 ],
-resources: [.process("ABKContentCards/Resources"), 
-           .process("ABKInAppMessage/Resources"),
-           .process("ABKNewsFeed/Resources"),            
+resources: [.process("ABKContentCards/Resources")       
+           ]
+      ),
+            .target(name: "AppboyNewsFeed",
+              path: "AppboyUI",
+              sources: [
+"ABKNewsFeed/ViewControllers/Cells/ABKNFClassicCardCell.m",
+"ABKNewsFeed/ViewControllers/Cells/ABKNFBaseCardCell.m",
+"ABKNewsFeed/ViewControllers/Cells/ABKNFBannerCardCell.m",
+"ABKNewsFeed/ViewControllers/Cells/ABKNFCaptionedMessageCardCell.m",
+"ABKNewsFeed/ViewControllers/ABKNewsFeedTableViewController.m",
+"ABKNewsFeed/ViewControllers/ABKFeedWebViewController.m",
+"ABKNewsFeed/ViewControllers/ABKNewsFeedViewController.m"
+],
+resources: [
+           .process("ABKNewsFeed/Resources")
            ]
       )
+
+
 
     ]
 )
