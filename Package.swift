@@ -12,7 +12,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_XCFramework", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", targets: ["AppboyUIUtils", "AppboyContentCards", "AppboyNewsFeed", "AppboyInAppMessage"])
+        .library(name: "AppboyUI", targets: ["AppboyUIUtils",  "AppboyInAppMessage", "AppboyContentCards", "AppboyNewsFeed"])
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
