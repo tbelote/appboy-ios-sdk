@@ -46,10 +46,10 @@ publicHeadersPath: "AppboyUI/ABKUIUtils"
 "ViewControllers/ABKContentCardsWebViewController.m",
 "ViewControllers/ABKContentCardsViewController.m"
 ],
-publicHeadersPath: "AppboyUI/ABKContentCards",
 resources: [
 .process("Resources")
-           ]
+           ],
+publicHeadersPath: "AppboyUI/ABKContentCards"           
       ),
             .target(name: "AppboyNewsFeed",
               path: "AppboyUI/ABKNewsFeed",
@@ -62,10 +62,10 @@ resources: [
 "ViewControllers/ABKFeedWebViewController.m",
 "ViewControllers/ABKNewsFeedViewController.m"
 ],
-publicHeadersPath: "AppboyUI/ABKNewsFeed",
 resources: [
 .process("Resources")
-           ]
+           ],
+publicHeadersPath: "AppboyUI/ABKNewsFeed"
       ),
       
             .target(name: "AppboyInAppMessage",
@@ -85,10 +85,11 @@ resources: [
 "ViewControllers/ABKInAppMessageHTMLViewController.m",
 "ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
 ],
-publicHeadersPath: "AppboyUI/ABKInAppMessage",
 resources: [
 .process("Resources")
-           ]
+           ],
+publicHeadersPath: "AppboyUI/ABKInAppMessage"
+           
       )
 
 
