@@ -62,8 +62,29 @@ resources: [.process("ABKContentCards/Resources")
 resources: [
            .process("ABKNewsFeed/Resources")
            ]
+      ),
+      
+            .target(name: "AppboyInAppMessage",
+              path: "AppboyUI",
+              sources: [
+"ABKInAppMessage/ABKInAppMessageWindow.m",
+"ABKInAppMessage/ABKInAppMessageUIButton.m",
+"ABKInAppMessage/ABKInAppMessageView.m",
+"ABKInAppMessage/ABKInAppMessageUIController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageModalViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageSlideupViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageFullViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageImmersiveViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageWindowController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLFullViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLViewController.m",
+"ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
+],
+resources: [
+           .process("ABKInAppMessage/Resources")
+           ]
       )
-
 
 
     ]
