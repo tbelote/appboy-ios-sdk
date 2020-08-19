@@ -27,6 +27,7 @@ let package = Package(
 
        ),
       .target(name: "AppboyUIUtils",
+      dependencies: ["Appboy_iOS_SDK"],
               path: "AppboyUI/ABKUIUtils",
               sources: [
 "ABKUIUtils.m",
