@@ -60,9 +60,9 @@ let package = Package(
 "ABKContentCards/ViewControllers/ABKContentCardsWebViewController.m",
 "ABKContentCards/ViewControllers/ABKContentCardsViewController.m"
 ],
-resources: [.copy("ABKContentCards/Resources"), 
-           .copy("ABKInAppMessage/Resources"),
-           .copy("ABKNewsFeed/Resources"),            
+resources: [.process("ABKContentCards/Resources"), 
+           .process("ABKInAppMessage/Resources"),
+           .process("ABKNewsFeed/Resources"),            
            ]
       )
 
