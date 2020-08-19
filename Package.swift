@@ -45,7 +45,13 @@ let package = Package(
 "ViewControllers/ABKContentCardsWebViewController.m",
 "ViewControllers/ABKContentCardsViewController.m"
 ],
-resources: [.process("ABKContentCards/Resources")       
+resources: [.process("ABKContentCards/Resources"),
+.process("images/appboy_cc_icon_pinned.png"),
+.process("images/appboy_cc_noimage_lrg.png"),
+.process("images/appboy_cc_icon_pinned@2x.png"),
+.process("images/appboy_cc_noimage_lrg@2x.png"),
+.process("images/appboy_cc_icon_pinned@3x.png")
+       
            ]
       ),
             .target(name: "AppboyNewsFeed",
@@ -60,7 +66,13 @@ resources: [.process("ABKContentCards/Resources")
 "ViewControllers/ABKNewsFeedViewController.m"
 ],
 resources: [
-           .process("ABKNewsFeed/Resources")
+           .process("ABKNewsFeed/Resources"),
+.process("Resources/images/img-noimage-lrg.png"),
+.process("Resources/images/img-noimage-lrg@2x.png"),
+.process("Resources/images/Icons_Unread.png"),
+.process("Resources/images/Icons_Read@2x.png"),
+.process("Resources/images/Icons_Read.png"),
+.process("Resources/images/Icons_Unread@2x.png")
            ]
       ),
       
@@ -82,7 +94,14 @@ resources: [
 "ViewControllers/ABKInAppMessageHTMLBaseViewController.m"
 ],
 resources: [
-           .process("ABKInAppMessage/Resources")
+           .process("ABKInAppMessage/Resources"),
+.process("Resources/com_appboy_inapp_close_icon@3x.png"),
+.process("Resources/FontAwesome.otf"),
+.process("Resources/com_appboy_inapp_close_icon.png"),
+.process("Resources/com_appboy_inapp_close_icon@2x.png"),
+.process("Resources/arrow@2x.png"),
+.process("Resources/arrow.png"),
+.process("Resources/arrow@3x.png")
            ]
       )
 
