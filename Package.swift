@@ -34,7 +34,7 @@ let package = Package(
 ]
       ),
             .target(name: "AppboyContentCards",
-              path: "ABKContentCards",
+              path: "AppboyUI/ABKContentCards",
               sources: [
 "ViewControllers/Cells/ABKClassicImageContentCardCell.m",
 "ViewControllers/Cells/ABKClassicContentCardCell.m",
