@@ -12,7 +12,8 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_XCFramework", targets: ["Appboy_iOS_SDK"]),
-        .library(name: "AppboyUI", targets: ["AppboyUIUtils",  "AppboyInAppMessage", "AppboyContentCards", "AppboyNewsFeed"])
+        .library(name: "AppboyUI", targets: ["AppboyUIUtils",  "AppboyInAppMessage", "AppboyContentCards", "AppboyNewsFeed"]),
+        
     ],
     dependencies: [
         .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
@@ -27,7 +28,7 @@ let package = Package(
 
        ),
       .target(name: "AppboyUIUtils",
-      dependencies: ["Appboy_iOS_SDK"],
+      dependencies: ["Appboy_XCFramework"],
               path: "AppboyUI/ABKUIUtils",
               sources: [
 "ABKUIUtils.m",
@@ -53,6 +54,7 @@ resources: [
 publicHeadersPath: "AppboyUI/ABKContentCards"           
       ),
             .target(name: "AppboyNewsFeed",
+              dependencies: ["SDWebImage"],
               path: "AppboyUI/ABKNewsFeed",
               sources: [
 "ViewControllers/Cells/ABKNFClassicCardCell.m",
