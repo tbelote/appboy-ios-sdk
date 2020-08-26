@@ -12,6 +12,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Appboy_XCFramework", targets: ["Appboy_iOS_SDK"]),
+        .library(name: "AppboyFullXCFramework", targets: ["AppboyFull"])
 //        .library(name: "AppboyUI", targets: ["AppboyUIUtils",  "AppboyInAppMessage", "AppboyContentCards", "AppboyNewsFeed"]),
         
     ],
