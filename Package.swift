@@ -25,11 +25,11 @@ let package = Package(
             url: "https://dl.dropboxusercontent.com/s/8xwq9h9mfdtyzad/Appboy_iOS_SDK.xcframework.zip?dl=1",
             checksum: "ac6c85562779660bd740109cfe522d4e93ea95f5b4130d1e61e6b81739d237c7"
             //Must be run from same folder as this file
-            //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.framework.zip
+            //swift package compute-checksum ~/Downloads/Appboy_iOS_SDK.xcframework.zip
 
        ),
        .binaryTarget(
-            name: "AppboyFull",
+            name: "AppboyFullSDK",
             url: "https://dl.dropboxusercontent.com/s/pps21gm5j1vccwj/AppboyFullSDK.xcframework.zip?dl=1",
             checksum: "d69ff82267826728ea3afccaaefd19059022985594641512fb88c0e4850c573a"
        )
