@@ -31,7 +31,7 @@ let package = Package(
        .binaryTarget(
             name: "AppboyFullSDK",
             url: "https://dl.dropboxusercontent.com/s/pps21gm5j1vccwj/AppboyFullSDK.xcframework.zip?dl=1",
-            checksum: "c25c5ce7cfc8672818fc6f5e6f41f33d6c21d792616cb385215e548293de14ab"
+            checksum: "e3d2d226272c7afa1c28cf22dc62a213a436b889b2d159c267413dd4476c6958"
        )
 //      .target(name: "AppboyUIUtils",
 //              dependencies: ["Appboy_iOS_SDK"],
