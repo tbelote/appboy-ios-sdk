@@ -4,22 +4,23 @@ import PackageDescription
 
 let package = Package(
     name: "Appboy_iOS_SDK",
+    defaultLocalization: "en",
     platforms: [
         .macOS(.v10_10),
         .iOS(.v9),
         .tvOS(.v9)
     ],
     products: [
-        .library(name: "Appboy_iOS_SDK", targets: ["Appboy_iOS_SDK"]),
+        .library(name: "Appboy_iOS_SDK", targets: ["AppboyKit"]),
         //.library(name: "AppboyUI_iOS_SDK", targets: ["AppboyUI_iOS_SDK"])
         .library(name: "AppboyUI_iOS_SDK", targets: ["ABKNewsFeed", "ABKInAppMessage", "ABKContentCards"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2"..<"6")
     ],
     targets: [
        .binaryTarget(
-            name: "Appboy_iOS_SDK",
+            name: "AppboyKit",
             url: "https://dl.dropboxusercontent.com/s/b00s8m4gg8a5uhd/AppboyKit.xcframework.zip?dl=1",
             checksum: "8f8e08083deb6394104172eab2ae8d2cae43a2c17a5ccf85414d8472e003f878"
        ),
