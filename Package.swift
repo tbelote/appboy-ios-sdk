@@ -100,8 +100,13 @@ let package = Package(
 				   ],
 				cSettings: [
            .headerSearchPath("ABKNewsFeed"),
-           .headerSearchPath("ABKInAppMessage"),
+           .headerSearchPath("ABKNewsFeed/ViewControllers/Cells"),
+           .headerSearchPath("ABKNewsFeed/ViewControllers"),
            .headerSearchPath("ABKContentCards"),
+           .headerSearchPath("ABKContentCards/ViewControllers"),
+           .headerSearchPath("ABKContentCards/ViewControllers/Cells"),
+           .headerSearchPath("ABKInAppMessage"),
+           .headerSearchPath("ABKInAppMessage/ViewControllers"),
            .headerSearchPath("ABKUIUtils")
         ]
 			)
