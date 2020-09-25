@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "AppboyUI_iOS_SDK", targets: ["ABKNewsFeed", "ABKInAppMessage", "ABKContentCards"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2"..<"6")
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
     ],
     targets: [
        .binaryTarget(
