@@ -30,7 +30,7 @@ let package = Package(
 //            checksum: "32a095ae29c6282161915bb74e871bb2f4f7c1eeaa70cf1525e02ab73fc17e9c"
 //       ),
 			.target(name: "ABKNewsFeed",
-				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
+				dependencies: ["SDWebImage", "AppboyKit"],
 				path: "AppboyUI",
 				sources: [
 					"ABKNewsFeed/AppboyNewsFeed.h",
@@ -57,7 +57,7 @@ let package = Package(
 				publicHeadersPath: "ABKNewsFeed"
 			),
 			.target(name: "ABKInAppMessage",
-				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
+				dependencies: ["SDWebImage", "AppboyKit"],
 				path: "AppboyUI",
 				sources: [
 					"ABKInAppMessage/ABKInAppMessageWindow.m",
@@ -96,7 +96,7 @@ let package = Package(
 				publicHeadersPath: "ABKInAppMessage"
 			),
 			.target(name: "ABKContentCards",
-				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
+				dependencies: ["SDWebImage", "AppboyKit"],
 				path: "AppboyUI",
 				sources: [
 					"ABKContentCards/ViewControllers/ABKContentCardsViewController.h",
