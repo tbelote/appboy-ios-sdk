@@ -11,7 +11,7 @@ let package = Package(
 		.tvOS(.v9)
 	],
 	products: [
-		.library(name: "Appboy_iOS_SDK", targets: [ "AppboyKit", "AppboyKitSourcesAndResources"]),
+		.library(name: "Appboy_iOS_SDK", targets: [ "AppboyKit", "AppboyKitSourcesAndResources" ]),
 		.library(name: "AppboyUI_iOS_SDK", targets: [ "AppboyUI" ])
 	],
 	dependencies: [
@@ -20,6 +20,7 @@ let package = Package(
 	targets: [
 	  .target(
 	    name: "AppboyKitSourcesAndResources",
+	    dependencies: [ "SDWebImage" ],
 	    path: "AppboyKit",
 	    sources: [
 	      "ABKLocationManagerProvider.m",
@@ -37,11 +38,11 @@ let package = Package(
 		.binaryTarget(
 			name: "AppboyKit",
 			url: "https://dl.dropboxusercontent.com/s/b00s8m4gg8a5uhd/AppboyKit.xcframework.zip?dl=1",
-            checksum: "8f8e08083deb6394104172eab2ae8d2cae43a2c17a5ccf85414d8472e003f878"
+      checksum: "8f8e08083deb6394104172eab2ae8d2cae43a2c17a5ccf85414d8472e003f878"
 		),
 		.target(
 		  name: "AppboyUI",
-			dependencies: ["SDWebImage", "AppboyKit"],
+			dependencies: [ "SDWebImage", "AppboyKit" ],
 			path: "AppboyUI",
 			sources: [
 				"ABKNewsFeed/AppboyNewsFeed.h",
