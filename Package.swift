@@ -29,6 +29,7 @@ let package = Package(
 //            checksum: "32a095ae29c6282161915bb74e871bb2f4f7c1eeaa70cf1525e02ab73fc17e9c"
 //       ),
 			.target(name: "ABKNewsFeed",
+				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
 				path: "AppboyUI",
 				sources: [
 					"ABKNewsFeed/AppboyNewsFeed.h",
@@ -50,12 +51,12 @@ let package = Package(
 					"ABKUIUtils/ABKUIURLUtils.m",
 					"ABKUIUtils/ABKUIUtils.h",
 					"ABKUIUtils/ABKUIURLUtils.h"
-				]
-				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
+				],
 				resources: [ .process("ABKNewsFeed/Resources") ],
 				publicHeadersPath: "ABKNewsFeed"
 			),
 			.target(name: "ABKInAppMessage",
+				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
 				path: "AppboyUI",
 				sources: [
 					"ABKInAppMessage/ABKInAppMessageWindow.m",
@@ -89,12 +90,12 @@ let package = Package(
 					"ABKUIUtils/ABKUIUtils.m",
 					"ABKUIUtils/ABKUIURLUtils.m",
 					"ABKUIUtils/ABKUIUtils.h",
-					"ABKUIUtils/ABKUIURLUtils.h" ]
-				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
+					"ABKUIUtils/ABKUIURLUtils.h" ],
 				resources: [ .process("ABKInAppMessage/Resources") ],
 				publicHeadersPath: "ABKInAppMessage"
 			),
 			.target(name: "ABKContentCards",
+				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
 				path: "AppboyUI",
 				sources: [
 					"ABKContentCards/ViewControllers/ABKContentCardsViewController.h",
@@ -117,8 +118,7 @@ let package = Package(
 					"ABKUIUtils/ABKUIUtils.m",
 					"ABKUIUtils/ABKUIURLUtils.m",
 					"ABKUIUtils/ABKUIUtils.h",
-					"ABKUIUtils/ABKUIURLUtils.h" ]
-				dependencies: ["SDWebImage", "Appboy_iOS_SDK"],
+					"ABKUIUtils/ABKUIURLUtils.h" ],
 				resources: [ .process("ABKContentCards/Resources") ],
 				publicHeadersPath: "ABKContentCards"
 			)
