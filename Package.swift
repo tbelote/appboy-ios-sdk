@@ -97,7 +97,13 @@ let package = Package(
 				resources: [ .process("ABKNewsFeed/Resources"),
 				  .process("ABKInAppMessage/Resources"),
 				  .process("ABKContentCards/Resources")
-				   ]
+				   ],
+				cSettings: [
+           .headerSearchPath("ABKNewsFeed"),
+           .headerSearchPath("ABKInAppMessage"),
+           .headerSearchPath("ABKContentCards"),
+           .headerSearchPath("ABKUIUtils")
+        ]
 			)
 
 //       .binaryTarget(
