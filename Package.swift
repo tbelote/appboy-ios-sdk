@@ -11,7 +11,7 @@ let package = Package(
 		.tvOS(.v9)
 	],
 	products: [
-		.library(name: "Appboy_iOS_SDK", targets: [ "AppboyKit", "AppboyKitSourcesAndResources "]),
+		.library(name: "Appboy_iOS_SDK", targets: [ "AppboyKit", "AppboyKitSourcesAndResources"]),
 		.library(name: "AppboyUI_iOS_SDK", targets: [ "AppboyUI" ])
 	],
 	dependencies: [
