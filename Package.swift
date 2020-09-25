@@ -28,6 +28,7 @@ let package = Package(
 	      "ABKModalWebViewController.m",
 	      "ABKSDWebImageProxy.m"
 	    ],
+	    publicHeadersPath: "headers/AppboyKitLibrary",
 	    resources: [
 	      .process("Appboy.bundle")
 	    ],
@@ -110,6 +111,7 @@ let package = Package(
 				"ABKUIUtils/ABKUIUtils.h",
 				"ABKUIUtils/ABKUIURLUtils.h"
 			],
+			publicHeadersPath: "",
 			resources: [
 				.process("ABKNewsFeed/Resources"),
 				.process("ABKInAppMessage/Resources"),
