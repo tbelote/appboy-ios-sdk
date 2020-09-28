@@ -45,7 +45,7 @@ let package = Package(
 		  name: "AppboyUI",
 			dependencies: [ "SDWebImage", "AppboyKit" ],
 			path: "AppboyUI",
-			exclude: [
+	    exclude: [
 			  "ABKNewsFeed/Resources",
 				"ABKInAppMessage/Resources",
 				"ABKContentCards/Resources"
@@ -59,13 +59,14 @@ let package = Package(
 				"ABKContentCards/ViewControllers",
 				"ABKContentCards/ViewControllers/Cells",
 				"ABKContentCards",
-				"ABKUIUtils",
-			],
+				"ABKUIUtils"
+      ],
 			resources: [
 				.process("ABKNewsFeed/Resources"),
 				.process("ABKInAppMessage/Resources"),
 				.process("ABKContentCards/Resources")
 			],
+			publicHeadersPath: "",
 			cSettings: [
 				.headerSearchPath("ABKNewsFeed"),
 				.headerSearchPath("ABKNewsFeed/ViewControllers/Cells"),
