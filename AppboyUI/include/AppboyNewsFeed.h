@@ -1,1 +1,1 @@
-.//ABKNewsFeed/AppboyNewsFeed.h
+../ABKNewsFeed/AppboyNewsFeed.h

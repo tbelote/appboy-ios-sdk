@@ -1,1 +1,1 @@
-.//ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLBaseViewController.h
+../ABKInAppMessage/ViewControllers/ABKInAppMessageHTMLBaseViewController.h

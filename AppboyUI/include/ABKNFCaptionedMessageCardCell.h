@@ -1,1 +1,1 @@
-.//ABKNewsFeed/ViewControllers/Cells/ABKNFCaptionedMessageCardCell.h
+../ABKNewsFeed/ViewControllers/Cells/ABKNFCaptionedMessageCardCell.h

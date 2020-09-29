@@ -1,1 +1,1 @@
-.//ABKContentCards/ViewControllers/ABKContentCardsWebViewController.h
+../ABKContentCards/ViewControllers/ABKContentCardsWebViewController.h

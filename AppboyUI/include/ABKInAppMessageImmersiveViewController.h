@@ -1,1 +1,1 @@
-.//ABKInAppMessage/ViewControllers/ABKInAppMessageImmersiveViewController.h
+../ABKInAppMessage/ViewControllers/ABKInAppMessageImmersiveViewController.h

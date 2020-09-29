@@ -1,1 +1,1 @@
-.//ABKInAppMessage/ABKInAppMessageWindow.h
+../ABKInAppMessage/ABKInAppMessageWindow.h

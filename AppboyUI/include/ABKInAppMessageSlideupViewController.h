@@ -1,1 +1,1 @@
-.//ABKInAppMessage/ViewControllers/ABKInAppMessageSlideupViewController.h
+../ABKInAppMessage/ViewControllers/ABKInAppMessageSlideupViewController.h

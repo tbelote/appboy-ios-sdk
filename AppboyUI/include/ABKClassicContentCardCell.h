@@ -1,1 +1,1 @@
-.//ABKContentCards/ViewControllers/Cells/ABKClassicContentCardCell.h
+../ABKContentCards/ViewControllers/Cells/ABKClassicContentCardCell.h

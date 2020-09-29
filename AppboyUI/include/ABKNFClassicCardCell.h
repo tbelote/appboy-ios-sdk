@@ -1,1 +1,1 @@
-.//ABKNewsFeed/ViewControllers/Cells/ABKNFClassicCardCell.h
+../ABKNewsFeed/ViewControllers/Cells/ABKNFClassicCardCell.h

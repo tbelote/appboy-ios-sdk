@@ -1,1 +1,1 @@
-.//ABKNewsFeed/ViewControllers/ABKNewsFeedViewController.h
+../ABKNewsFeed/ViewControllers/ABKNewsFeedViewController.h

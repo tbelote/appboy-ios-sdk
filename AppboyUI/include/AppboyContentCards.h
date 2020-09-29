@@ -1,1 +1,1 @@
-.//ABKContentCards/AppboyContentCards.h
+../ABKContentCards/AppboyContentCards.h

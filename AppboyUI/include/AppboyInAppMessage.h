@@ -1,1 +1,1 @@
-.//ABKInAppMessage/AppboyInAppMessage.h
+../ABKInAppMessage/AppboyInAppMessage.h

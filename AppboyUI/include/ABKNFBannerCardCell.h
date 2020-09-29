@@ -1,1 +1,1 @@
-.//ABKNewsFeed/ViewControllers/Cells/ABKNFBannerCardCell.h
+../ABKNewsFeed/ViewControllers/Cells/ABKNFBannerCardCell.h

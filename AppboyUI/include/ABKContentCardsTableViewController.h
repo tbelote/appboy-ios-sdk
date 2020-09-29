@@ -1,1 +1,1 @@
-.//ABKContentCards/ViewControllers/ABKContentCardsTableViewController.h
+../ABKContentCards/ViewControllers/ABKContentCardsTableViewController.h
