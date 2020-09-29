@@ -45,6 +45,11 @@ let package = Package(
 		  name: "AppboyUI",
 			dependencies: [ "SDWebImage", "AppboyKit" ],
 			path: "AppboyUI",
+	    exclude: [
+			  "ABKNewsFeed/Resources",
+				"ABKInAppMessage/Resources",
+				"ABKContentCards/Resources"
+			],
 			sources: [
 				"ABKNewsFeed",
 				"ABKNewsFeed/ViewControllers/Cells",
@@ -55,7 +60,7 @@ let package = Package(
 				"ABKContentCards/ViewControllers/Cells",
 				"ABKContentCards",
 				"ABKUIUtils"
-                        ],
+      ],
 			resources: [
 				.process("ABKNewsFeed/Resources"),
 				.process("ABKInAppMessage/Resources"),
