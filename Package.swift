@@ -116,7 +116,6 @@ let package = Package(
 				.process("ABKInAppMessage/Resources"),
 				.process("ABKContentCards/Resources")
 			],
-			publicHeadersPath: "",
 			cSettings: [
 				.headerSearchPath("ABKNewsFeed"),
 				.headerSearchPath("ABKNewsFeed/ViewControllers/Cells"),
