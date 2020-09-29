@@ -28,6 +28,7 @@
  */
 @property (class, readonly) UIStatusBarStyle applicationStatusBarStyle;
 
++ (NSBundle *)bundle:(Class)bundleClass;
 + (NSString *)getLocalizedString:(NSString *)key inAppboyBundle:(NSBundle *)appboyBundle table:(NSString *)table;
 + (BOOL)objectIsValidAndNotEmpty:(id)object;
 + (Class)getSDWebImageProxyClass;

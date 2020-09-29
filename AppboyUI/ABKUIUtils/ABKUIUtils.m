@@ -1,6 +1,8 @@
 #import "ABKUIUtils.h"
 #import "ABKSDWebImageProxy.h"
 
+#define ABKUISPMBundlePath @"/Appboy_iOS_SDK_AppboyUI.bundle/"
+
 static NSString *const LocalizedAppboyStringNotFound = @"not found";
 static NSUInteger const iPhoneXHeight = 2436.0;
 static NSUInteger const iPhoneXRHeight = 1792.0;
@@ -9,6 +11,14 @@ static NSUInteger const iPhoneXRScaledHeight = 1624.0;
 
 @implementation ABKUIUtils
 
+#pragma mark - Bundle Helper
++ (NSBundle *) bundle:(Class)bundleClass {
+  NSString *spmBundleAt = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:ABKUISPMBundlePath];
+  if ([[NSFileManager defaultManager] fileExistsAtPath:spmBundleAt]) {
+    return [NSBundle bundleWithPath:spmBundleAt];
+  }
+  return  [NSBundle bundleForClass:bundleClass];
+}
 #pragma mark - View Hierarchy Helpers
 
 // Used in unit tests to mock the UIApplication instance used.
