@@ -34,7 +34,12 @@ let package = Package(
 	    publicHeadersPath: "headers/AppboyKitLibrary",
 	    cSettings: [
 				.headerSearchPath("headers/AppboyKitLibrary"),
-			]
+			],
+			linkerSettings: [
+        .linkedFramework("SystemConfiguration"),
+        .linkedFramework("CoreTelephony", .when(platforms: [.iOS])),
+        .linkedLibrary("z"),
+      ]
 	  ),
 		.binaryTarget(
 			name: "AppboyKit",
@@ -126,7 +131,12 @@ let package = Package(
 				.headerSearchPath("ABKInAppMessage"),
 				.headerSearchPath("ABKInAppMessage/ViewControllers"),
 				.headerSearchPath("ABKUIUtils")
-		  ]
+		         ],
+      linkerSettings: [
+        .linkedFramework("SystemConfiguration"),
+        .linkedFramework("CoreTelephony", .when(platforms: [.iOS])),
+        .linkedLibrary("z"),
+      ]
 		)
   ]
 )
