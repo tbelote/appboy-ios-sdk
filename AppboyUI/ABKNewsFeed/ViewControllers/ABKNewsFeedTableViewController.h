@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 #import "AppboyKit.h"
-#import "Cells/ABKNFBaseCardCell.h"
+#import "ABKNFBaseCardCell.h"
 
 @interface ABKNewsFeedTableViewController : UITableViewController <ABKBaseNewsFeedCellDelegate>
 
