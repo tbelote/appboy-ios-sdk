@@ -1,1 +1,0 @@
-../ABKContentCards/ViewControllers/Cells/ABKCaptionedImageContentCardCell.h
