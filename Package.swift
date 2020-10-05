@@ -9,7 +9,7 @@ let package = Package(
     .iOS(.v9)
   ],
   products: [
-    .library(name: "AppboyKit", type: .static, targets: ["AppboyKitLibrary"]),
+    .library(name: "AppboyKit", type: .static, targets: ["AppboyKit"]),
     .library(name: "AppboyUI", targets: ["AppboyUI"])
   ],
   dependencies: [
@@ -17,13 +17,14 @@ let package = Package(
   ],
   targets: [
     .binaryTarget(
-      name: "AppboyKit",
-      url: "https://dl.dropboxusercontent.com/s/b00s8m4gg8a5uhd/AppboyKit.xcframework.zip?dl=1",
-      checksum: "8f8e08083deb6394104172eab2ae8d2cae43a2c17a5ccf85414d8472e003f878"
+      name: "AppboyKitLibrary",
+      url:
+      "https://dl.dropboxusercontent.com/s/cuid7g4ae5yy9wi/AppboyKitLibrary.xcframework.zip?dl=1",
+      checksum: "711b4938e05c234db4ef0639a7671a4311ff221f21bd5ff4f6ced2b04df5611e"
     ),
     .target(
-      name: "AppboyKitLibrary",
-      dependencies: ["SDWebImage", "AppboyKit"],
+      name: "AppboyKit",
+      dependencies: ["SDWebImage", "AppboyKitLibrary"],
       path: "AppboyKit",
       resources: [
         .process("Appboy.bundle"),
@@ -55,5 +56,3 @@ let package = Package(
     )
   ]
 )
-
-
