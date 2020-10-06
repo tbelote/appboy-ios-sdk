@@ -19,5 +19,3 @@ xcuserdata/
 
 # Cocoapod release artifact
 Appboy_iOS_SDK.zip
-#ignore SPM build folder
-.build
