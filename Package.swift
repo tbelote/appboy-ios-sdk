@@ -19,7 +19,7 @@ let package = Package(
     .binaryTarget(
       name: "AppboyKitLibrary",
       url: "https://dl.dropboxusercontent.com/s/cuid7g4ae5yy9wi/AppboyKitLibrary.xcframework.zip?dl=1",
-      checksum: "711b4938e05c234db4ef0639a7671a4311ff221f21bd5ff4f6ced2b04df5611e"
+      checksum: "37c2bdd60c305bc412917b195374f7db206345326b5fd1d3b1c0778e79f1669c"
     ),
     .target(
       name: "AppboyKit",
