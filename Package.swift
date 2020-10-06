@@ -44,7 +44,6 @@ let package = Package(
     ),
     .target(
       name: "AppboyUI",
-      dependencies: ["AppboyKit"],
       path: "AppboyUI",
       resources: [
         .process("ABKNewsFeed/Resources"),
